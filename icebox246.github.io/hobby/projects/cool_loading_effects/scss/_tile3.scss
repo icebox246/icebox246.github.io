@@ -1,0 +1,33 @@
+.tile3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    width: 15px;
+    height: 15px;
+    background: $blue;
+    position: absolute;
+    animation: move3 2s infinite;
+    &:nth-child(2) {
+      animation-delay: -1s;
+    }
+  }
+
+  @keyframes move3 {
+    0% {
+      transform: translate(-100%, -100%);
+    }
+    25% {
+      transform: translate(100%, -100%);
+    }
+    50% {
+      transform: translate(100%, 100%);
+    }
+    75% {
+      transform: translate(-100%, 100%);
+    }
+    100% {
+      transform: translate(-100%, -100%);
+    }
+  }
+}
