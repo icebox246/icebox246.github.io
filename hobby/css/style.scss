@@ -1,0 +1,207 @@
+@import "_pallette.scss";
+@import "_cube3d_sheet.scss";
+@import "_neumorphism.scss";
+
+* {
+  &::selection {
+    color: white;
+    background: #485d75;
+  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  color: $bright;
+}
+
+hr {
+  margin: 50px 0;
+  border: $semi-dark 2px solid;
+}
+
+body {
+  background: url("../img/pcs_bg.svg") $dark;
+  background-size: 320px 320px;
+  min-height: 100vh;
+  animation: bg-fly 3s infinite linear;
+  scroll-behavior: smooth;
+}
+
+@keyframes bg-fly {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -320px 320px;
+  }
+}
+
+img.logo {
+  max-width: 30vh;
+  height: auto;
+
+  filter: drop-shadow($accent-dark 0 0 10px);
+}
+
+video {
+  max-height: 70vh;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  filter: drop-shadow($accent-dark 0 0 10px);
+  cursor: pointer;
+}
+
+.play-button {
+  cursor: pointer;
+  padding: 10px;
+  background: $semi-dark;
+  text-align: center;
+}
+
+.collumns {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  * {
+    //flex: 1;
+    margin: 40px;
+  }
+}
+
+.rows {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  * {
+    //flex: 1;
+    margin: 30px;
+  }
+}
+
+main {
+  //padding: 5vw;
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+  
+  section {
+    background: $dark;
+    min-height: 90vh;
+    margin-bottom: 50px;
+    border-bottom: $semi-dark 4px solid;
+    border-top: $semi-dark 4px solid;
+    box-shadow: $dark 0 0 20px;
+  }
+  
+}
+
+p,
+a {
+  font-family: "Open Sans";
+  color: $bright;
+  text-decoration: none;
+}
+
+header {
+  max-height: 7vh;
+  &.solid {
+    background: $semi-dark;
+    box-shadow: 0px 3px 10px rgba(44, 43, 40, 0.452);
+  }
+
+  display: flex;
+
+  align-items: center;
+  justify-content: stretch;
+
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  transition: all 0.5s ease;
+  .logoname{
+    flex:2;
+    display:flex;
+    align-items: center;
+    img {
+      height:5vh;
+      margin: 1vh 10px 1vh 1vw;
+    }
+  }
+  h2 {
+    flex: 2;
+    
+  }
+  .links {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1vw;
+  }
+}
+
+.big-title {
+  font-size: 3em;
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+  padding: 1em 0.5em 0.2em 0.5em;
+  border-bottom: solid 5px $accent;
+  text-shadow: $semi-dark -5px -5px 0;
+  color: $accent;
+}
+
+.small-title {
+  font-size: 2em;
+  max-width: 40%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1em 0.5em 0.2em 0.5em;
+  border-bottom: solid 3px $accent-dark;
+}
+.title-container {
+  //margin-top: -7vh;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .main-title {
+    width: 100%;
+    font-family: "Oswald";
+    text-shadow: $semi-dark -10px -10px 0;
+    font-size: 20vh;
+    color: $accent;
+    text-align: center;
+  }
+}
+
+iframe.demo {
+  width: 100%;
+  min-height: 80vh;
+  margin-top: 50px;
+  // border-radius: 20px;
+  border-left: solid 2px $accent-dark;
+  border-right: solid 2px $accent-dark;
+  &.syz {
+    background: white;
+  }
+}
+
+iframe.ani-demo {
+  width: 100%;
+  height: 225px;
+  margin-top: 50px;
+  // border: dashed 2px $accent-dark;
+  // border-radius: 20px;
+}
+
+footer {
+  background: $semi-dark;
+  text-align: center;
+  padding: 5px 0 30px;
+  border-top: 2px dashed $accent-dark;
+}
