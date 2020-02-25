@@ -17,9 +17,15 @@
 .fade-in {
   opacity: 0;
   animation: fade-in 2s ease-in forwards;
+  will-change: opacity;
   &.delay {
     animation-delay: 1s;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  //overflow-x: hidden;
 }
 
 @keyframes fade-in {
@@ -39,22 +45,35 @@ hr {
 
 $bg_img_size : 500px;
 
-body {
-  background: url("../img/pcs_bg.svg") $dark;
+.bg{
+  background: url("../img/pcs_bg.svg");
   background-attachment: fixed;
-  background-size: $bg_img_size $bg_img_size;
-  min-height: 100vh;
+  background-size: $bg_img_size/2 $bg_img_size/2;
+  height : 100vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  will-change: transform;
+  transform-origin: bottom left;
   animation: bg-fly 8s infinite linear -4s;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  z-index: -1;
+}
+body {
+  
+  background: $dark;
+  min-height: 100vh;
+  //overflow-x: hidden;
 }
 
 @keyframes bg-fly {
   from {
-    background-position: 0px 0px;
+    //background-position: 0px 0px;
+    transform: scale(2) translate(0,0) ;
   }
   to {
-    background-position: -$bg_img_size $bg_img_size;
+    //background-position: -$bg_img_size $bg_img_size;
+    transform: scale(2) translate(-$bg_img_size, $bg_img_size);
   }
 }
 

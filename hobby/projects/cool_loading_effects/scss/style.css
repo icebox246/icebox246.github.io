@@ -53,21 +53,25 @@
 .tile1 .dot:nth-child(1) {
   -webkit-animation: spin_around1 1.5s ease-in infinite 0s;
           animation: spin_around1 1.5s ease-in infinite 0s;
+  will-change: transform;
 }
 
 .tile1 .dot:nth-child(2) {
   -webkit-animation: spin_around1 1.5s ease-in infinite 0.2s;
           animation: spin_around1 1.5s ease-in infinite 0.2s;
+  will-change: transform;
 }
 
 .tile1 .dot:nth-child(3) {
   -webkit-animation: spin_around1 1.5s ease-in infinite 0.4s;
           animation: spin_around1 1.5s ease-in infinite 0.4s;
+  will-change: transform;
 }
 
 .tile1 .dot:nth-child(4) {
   -webkit-animation: spin_around1 1.5s ease-in infinite 0.6s;
           animation: spin_around1 1.5s ease-in infinite 0.6s;
+  will-change: transform;
 }
 
 @-webkit-keyframes spin_around1 {
@@ -111,6 +115,7 @@
   background: #66fcf1;
   -webkit-transform: translateY(8px);
           transform: translateY(8px);
+  will-change: transform;
 }
 
 .tile2 .paddle.left {
@@ -133,6 +138,7 @@
   border-radius: 100%;
   -webkit-animation: bounce2 1s linear infinite alternate;
           animation: bounce2 1s linear infinite alternate;
+  will-change: transform;
 }
 
 @-webkit-keyframes bounce2 {
@@ -220,13 +226,14 @@
   height: 15px;
   background: #66fcf1;
   position: absolute;
-  -webkit-animation: move3 2s infinite;
-          animation: move3 2s infinite;
+  -webkit-animation: move3 4s infinite;
+          animation: move3 4s infinite;
+  will-change: transform;
 }
 
 .tile3 .box:nth-child(2) {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
 }
 
 @-webkit-keyframes move3 {
@@ -294,6 +301,7 @@
   margin: 0 5px;
   -webkit-animation: rotate4 1.5s linear infinite -1s;
           animation: rotate4 1.5s linear infinite -1s;
+  will-change: transform;
 }
 
 .tile4 .box:nth-child(2) {

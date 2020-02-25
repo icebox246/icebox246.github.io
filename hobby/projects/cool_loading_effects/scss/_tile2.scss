@@ -9,6 +9,7 @@
     height: 6px;
     background: $blue;
     transform: translateY(8px);
+    will-change: transform;
     &.left {
       margin-left: 25px;
       animation: paddle2 2s linear infinite 1s;
@@ -16,6 +17,7 @@
     &.right {
       margin-left: -25px;
       animation: paddle2 2s linear infinite;
+      
     }
   }
   .ball {
@@ -26,6 +28,7 @@
     border-radius: 100%;
 
     animation: bounce2 1s linear infinite alternate;
+    will-change: transform;
   }
 }
 

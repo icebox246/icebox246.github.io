@@ -15,6 +15,7 @@
   margin: auto;
   animation: rot3dcube 6s linear infinite;
   position: relative;
+  will-change: transform;
   transform: translate(0, 12.5%) scale3d(0.8, 0.8, 0.8) rotateX(-90deg)
     translateY(50%) rotateX(90deg);
   animation-fill-mode: forwards;
@@ -27,7 +28,7 @@
   height: 100%;
   z-index: 1;
   border: 6px solid #66fcf1;
-
+  will-change: transform;
   background-repeat: no-repeat;
   background-size: cover;
 }

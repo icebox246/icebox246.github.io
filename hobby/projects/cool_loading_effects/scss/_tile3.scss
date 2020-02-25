@@ -7,9 +7,10 @@
     height: 15px;
     background: $blue;
     position: absolute;
-    animation: move3 2s infinite;
+    animation: move3 4s infinite;
+    will-change: transform;
     &:nth-child(2) {
-      animation-delay: -1s;
+      animation-delay: -2s;
     }
   }
 
