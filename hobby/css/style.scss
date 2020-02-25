@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
   animation: bg-fly 3s infinite linear;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @keyframes bg-fly {
@@ -86,7 +87,7 @@ main {
   width: 80%;
   min-height: 100vh;
   margin: auto;
-  
+
   section {
     background: $dark;
     min-height: 90vh;
@@ -95,7 +96,6 @@ main {
     border-top: $semi-dark 4px solid;
     box-shadow: $dark 0 0 20px;
   }
-  
 }
 
 p,
@@ -122,18 +122,17 @@ header {
   top: 0px;
   z-index: 2;
   transition: all 0.5s ease;
-  .logoname{
-    flex:2;
-    display:flex;
+  .logoname {
+    flex: 2;
+    display: flex;
     align-items: center;
     img {
-      height:5vh;
+      height: 5vh;
       margin: 1vh 10px 1vh 1vw;
     }
   }
   h2 {
     flex: 2;
-    
   }
   .links {
     flex: 2;
@@ -186,6 +185,7 @@ iframe.demo {
   // border-radius: 20px;
   border-left: solid 2px $accent-dark;
   border-right: solid 2px $accent-dark;
+  overflow: hidden;
   &.syz {
     background: white;
   }

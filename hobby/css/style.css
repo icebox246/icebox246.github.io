@@ -211,6 +211,7 @@ body {
   -webkit-animation: bg-fly 3s infinite linear;
           animation: bg-fly 3s infinite linear;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes bg-fly {
@@ -421,6 +422,7 @@ iframe.demo {
   margin-top: 50px;
   border-left: solid 2px #45A29e;
   border-right: solid 2px #45A29e;
+  overflow: hidden;
 }
 
 iframe.demo.syz {
@@ -439,3 +441,4 @@ footer {
   padding: 5px 0 30px;
   border-top: 2px dashed #45A29e;
 }
+/*# sourceMappingURL=style.css.map */

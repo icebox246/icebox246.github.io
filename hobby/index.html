@@ -1,164 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt Ja</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projekt Ja</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins|Oswald&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="solid">
-    <div class="logoname">
-      <img src="./favicon.ico" alt="">
-      <h2>Projekt Ja</h2>
-    </div>
-
-    <div class="links">
-      <a href="./#programming-place">
-        <h3>Programowanie</h3>
-      </a>
-      <a href="./#gamedev-place">
-        <h3>Game-dev</h3>
-      </a>
-      <a href="./#webdev-place">
-        <h3>Web-dev</h3>
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <div class="title-container">
-        <h1 class="main-title">MOJE HOBBY</h1>
+  <body>
+    <header class="solid">
+      <div class="logoname">
+        <img src="./favicon.ico" alt="" />
+        <h2>Projekt Ja</h2>
       </div>
 
-    </section>
-    <section id="programming-place">
-      <h1 class="big-title">Programowanie</h1>
-      <div class="image cube3d scene square-me" id="cube3d-scene" title="Done mostly with CSS and a little bit of JS">
-        <div class="cube3d base">
-          <div class="cube3d face front"></div>
-          <div class="cube3d face back"></div>
-          <div class="cube3d face right"></div>
-          <div class="cube3d face left"></div>
-          <div class="cube3d face top"></div>
-          <div class="cube3d face bottom"></div>
+      <div class="links">
+        <a href="./#programming-place">
+          <h3>Programowanie</h3>
+        </a>
+        <a href="./#gamedev-place">
+          <h3>Game-dev</h3>
+        </a>
+        <a href="./#webdev-place">
+          <h3>Web-dev</h3>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="title-container">
+          <h1 class="main-title">MOJE HOBBY</h1>
         </div>
-      </div>
-      <h2 class="small-title">Processing & p5.js</h2>
-      <div class="collumns">
-        <div class="rows">
-          <img class="logo" src="./img/programming/processing_logo.png" alt="processing-logo" />
-          <img class="logo" src="./img/programming/p5_logo.png" alt="p5-logo" />
-        </div>
-        <img class="logo" src="./img/programming/coding_train.jpg" alt="p5-logo" />
-      </div>
-
-      <h1 class="big-title">Przykładowe projekty</h1>
-      <h2 class="small-title">Generowanie płatka Kocha</h2>
-      <iframe onload="setIframeHeight(this)" class="demo" src="./projects/koch_fractals/index.html"
-        frameborder="0"></iframe>
-      <h2 class="small-title">Generowanie płatków śniegu</h2>
-      <iframe onload="setIframeHeight(this)" class="demo" src="./projects/snowflakes/index.html"
-        frameborder="0"></iframe>
-      <h2 class="small-title">Algorytm A*</h2>
-      <iframe onload="setIframeHeight(this)" class="demo" src="./projects/a_star_umf/index.html"
-        frameborder="0"></iframe>
-      <h2 class="small-title">Mój avatar z Facebooka</h2>
-      <div class="collumns"><img class="logo" src="./img/output.png" alt="my_avatar" /></div>
-    </section>
-
-    <section id="gamedev-place">
-      <h1 class="big-title">Game-dev</h1>
-      <div class="image cube3d scene square-me" id="cube3d-scene" title="Done mostly with CSS and a little bit of JS">
-        <div class="cube3d base">
-          <div class="cube3d face front"></div>
-          <div class="cube3d face back"></div>
-          <div class="cube3d face right"></div>
-          <div class="cube3d face left"></div>
-          <div class="cube3d face top"></div>
-          <div class="cube3d face bottom"></div>
-        </div>
-      </div>
-      <h2 class="small-title">Unity & Brackeys</h2>
-      <div class="collumns">
-        <img class="logo" src="./img/gamedev/unity_logo.png" alt="unity" />
-        <img class="logo" src="./img/gamedev/brackeys.png" alt="brackeys" />
-      </div>
-
-      <h1 class="big-title">Bialjam</h1>
-      <h2 class="small-title">2018</h2>
-      <video onclick="playVideo(this)" src="./img/gamedev/zemsta_somsiada.mp4"></video>
-
-      <h2 class="small-title">2019</h2>
-      <video onclick="playVideo(this)" src="./img/gamedev/watch_your_steps.mp4"></video>
-
-      <h1 class="big-title">Mój silnik</h1>
-      <video onclick="playVideo(this)" src="./img/gamedev/frost_engine.mp4"></video>
-
-      <hr />
-      <video onclick="playVideo(this)" src="./img/gamedev/cropped_walk.mp4"></video>
-
-
-    </section>
-
-    <section id="webdev-place">
-      <h1 class="big-title">Web-dev</h1>
-      <div class="image cube3d scene square-me" id="cube3d-scene" title="Done mostly with CSS and a little bit of JS">
-        <div class="cube3d base">
-          <div class="cube3d face front"></div>
-          <div class="cube3d face back"></div>
-          <div class="cube3d face right"></div>
-          <div class="cube3d face left"></div>
-          <div class="cube3d face top"></div>
-          <div class="cube3d face bottom"></div>
-        </div>
-      </div>
-
-
-
-      <h2 class="small-title">Strona z quizem</h2>
-      <iframe onload="setIframeHeight(this)" class="demo" src="http://quizorynku.orgfree.com/" frameborder="0"></iframe>
-
-      <h2 class="small-title">Strona o Syzyfie</h2>
-      <iframe class="demo syz" src="http://osyzyfie.orgfree.com/" frameborder="0"></iframe>
-
-      <h2 class="small-title">Animacje</h2>
-      <iframe src="./projects/cool_loading_effects/index.html" frameborder="0" class="ani-demo"></iframe>
-
-      <h2 class="small-title">Neumorphism</h2>
-      <div class="neumorphism">
-        <div class="rows">
-          <div class="collumns">
-            <div class="square">
-              <div class="inner"></div>
-              <div class="inner"></div>
-              <div class="inner"></div>
-              <div class="inner"></div>
-            </div>
-            <div class="circle">
-              <div class="inner"></div>
-            </div>
-          </div>
-          <div class="button">
-            <p>Click me!</p>
+      </section>
+      <section id="programming-place">
+        <h1 class="big-title">Programowanie</h1>
+        <div
+          class="image cube3d scene square-me"
+          id="cube3d-scene"
+          title="Done mostly with CSS and a little bit of JS"
+        >
+          <div class="cube3d base">
+            <div class="cube3d face front"></div>
+            <div class="cube3d face back"></div>
+            <div class="cube3d face right"></div>
+            <div class="cube3d face left"></div>
+            <div class="cube3d face top"></div>
+            <div class="cube3d face bottom"></div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+        <h2 class="small-title">Processing & p5.js</h2>
+        <div class="collumns">
+          <div class="rows">
+            <img
+              class="logo"
+              src="./img/programming/processing_logo.png"
+              alt="processing-logo"
+            />
+            <img
+              class="logo"
+              src="./img/programming/p5_logo.png"
+              alt="p5-logo"
+            />
+          </div>
+          <img
+            class="logo"
+            src="./img/programming/coding_train.jpg"
+            alt="p5-logo"
+          />
+        </div>
 
-  <script src="./js/main.js"></script>
-  <footer>
-    <p>
-      Autor: <br />
-      Adam Rogowski <br />
-      2020
-    </p>
-  </footer>
-</body>
+        <h1 class="big-title">Przykładowe projekty</h1>
+        <h2 class="small-title">Generowanie płatka Kocha</h2>
+        <iframe
+          onload="setIframeHeight(this)"
+          class="demo"
+          src="./projects/koch_fractals/index.html"
+          frameborder="0"
+        ></iframe>
+        <h2 class="small-title">Generowanie płatków śniegu</h2>
+        <iframe
+          onload="setIframeHeight(this)"
+          class="demo"
+          src="./projects/snowflakes/index.html"
+          frameborder="0"
+        ></iframe>
+        <h2 class="small-title">Algorytm A*</h2>
+        <iframe
+          onload="setIframeHeight(this)"
+          class="demo"
+          src="./projects/a_star_umf/index.html"
+          frameborder="0"
+        ></iframe>
+        <h2 class="small-title">Mój avatar z Facebooka</h2>
+        <div class="collumns">
+          <img class="logo" src="./img/output.png" alt="my_avatar" />
+        </div>
+      </section>
 
+      <section id="gamedev-place">
+        <h1 class="big-title">Game-dev</h1>
+        <div
+          class="image cube3d scene square-me"
+          id="cube3d-scene"
+          title="Done mostly with CSS and a little bit of JS"
+        >
+          <div class="cube3d base">
+            <div class="cube3d face front"></div>
+            <div class="cube3d face back"></div>
+            <div class="cube3d face right"></div>
+            <div class="cube3d face left"></div>
+            <div class="cube3d face top"></div>
+            <div class="cube3d face bottom"></div>
+          </div>
+        </div>
+        <h2 class="small-title">Unity & Brackeys</h2>
+        <div class="collumns">
+          <img class="logo" src="./img/gamedev/unity_logo.png" alt="unity" />
+          <img class="logo" src="./img/gamedev/brackeys.png" alt="brackeys" />
+        </div>
+
+        <h1 class="big-title">Bialjam</h1>
+        <h2 class="small-title">2018</h2>
+        <video
+          onclick="playVideo(this)"
+          src="./img/gamedev/zemsta_somsiada.mp4"
+        ></video>
+
+        <h2 class="small-title">2019</h2>
+        <video
+          onclick="playVideo(this)"
+          src="./img/gamedev/watch_your_steps.mp4"
+        ></video>
+
+        <h1 class="big-title">Mój silnik</h1>
+        <video
+          onclick="playVideo(this)"
+          src="./img/gamedev/frost_engine.mp4"
+        ></video>
+
+        <hr />
+        <video
+          onclick="playVideo(this)"
+          src="./img/gamedev/cropped_walk.mp4"
+        ></video>
+      </section>
+
+      <section id="webdev-place">
+        <h1 class="big-title">Web-dev</h1>
+        <div
+          class="image cube3d scene square-me"
+          id="cube3d-scene"
+          title="Done mostly with CSS and a little bit of JS"
+        >
+          <div class="cube3d base">
+            <div class="cube3d face front"></div>
+            <div class="cube3d face back"></div>
+            <div class="cube3d face right"></div>
+            <div class="cube3d face left"></div>
+            <div class="cube3d face top"></div>
+            <div class="cube3d face bottom"></div>
+          </div>
+        </div>
+
+        <h2 class="small-title">Strona z quizem</h2>
+        <iframe
+          onload="setIframeHeight(this)"
+          class="demo"
+          src="http://quizorynku.orgfree.com/"
+          frameborder="0"
+        ></iframe>
+
+        <h2 class="small-title">Strona o Syzyfie</h2>
+        <iframe
+          class="demo syz"
+          src="http://osyzyfie.orgfree.com/"
+          frameborder="0"
+        ></iframe>
+
+        <h2 class="small-title">Animacje</h2>
+        <iframe
+          src="./projects/cool_loading_effects/index.html"
+          frameborder="0"
+          class="ani-demo"
+        ></iframe>
+
+        <h2 class="small-title">Neumorphism</h2>
+        <div class="neumorphism">
+          <div class="rows">
+            <div class="collumns">
+              <div class="square">
+                <div class="inner"></div>
+                <div class="inner"></div>
+                <div class="inner"></div>
+                <div class="inner"></div>
+              </div>
+              <div class="circle">
+                <div class="inner"></div>
+              </div>
+            </div>
+            <div class="button">
+              <p>Click me!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <footer>
+      <p>
+        Autor: <br />
+        Adam Rogowski <br />
+        2020
+      </p>
+    </footer>
+  </body>
 </html>
