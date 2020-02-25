@@ -14,6 +14,24 @@
   color: $bright;
 }
 
+.fade-in {
+  opacity: 0;
+  animation: fade-in 2s ease-in forwards;
+  &.delay {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 hr {
   margin: 50px 0;
   border: $semi-dark 2px solid;

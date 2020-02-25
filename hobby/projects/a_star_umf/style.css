@@ -32,6 +32,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-height: 100vh;
+  overflow: hidden;
 }
 
 p {

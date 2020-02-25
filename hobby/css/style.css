@@ -199,6 +199,35 @@
   background: #485d75;
 }
 
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fade-in 2s ease-in forwards;
+          animation: fade-in 2s ease-in forwards;
+}
+
+.fade-in.delay {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 hr {
   margin: 50px 0;
   border: #1f2833 2px solid;

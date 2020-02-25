@@ -13,20 +13,12 @@ Object.defineProperty(HTMLMediaElement.prototype, "playing", {
 
 const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
-  console.log("hai");
   if (window.pageYOffset === 0) {
     header.classList.remove("solid");
   } else {
     header.classList.add("solid");
   }
 });
-
-// const videos = document.querySelectorAll("video");
-
-// function playVideo(n) {
-//   if (videos[n].playing) videos[n].pause();
-//   else videos[n].play();
-// }
 
 function playVideo(n) {
   if (n.playing) n.pause();
@@ -72,3 +64,15 @@ function setIframeHeight(ifrm) {
   ifrm.style.height = getDocHeight(doc) + 10 + "px";
   ifrm.style.visibility = "visible";
 }
+
+const addFade = elem => {
+  elem.addEventListener("load", () => {
+    console.log("Loaded in: " + elem.src);
+    elem.style.opacity = "0";
+    elem.style.animation = "fade-in 2s ease-in forwards";
+  });
+};
+
+document.querySelectorAll("iframe").forEach(addFade);
+document.querySelectorAll("img").forEach(addFade);
+document.querySelectorAll("video").forEach(addFade);
