@@ -37,11 +37,14 @@ hr {
   border: $semi-dark 2px solid;
 }
 
+$bg_img_size : 500px;
+
 body {
   background: url("../img/pcs_bg.svg") $dark;
-  background-size: 320px 320px;
+  background-attachment: fixed;
+  background-size: $bg_img_size $bg_img_size;
   min-height: 100vh;
-  animation: bg-fly 3s infinite linear;
+  animation: bg-fly 8s infinite linear -4s;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -51,7 +54,7 @@ body {
     background-position: 0px 0px;
   }
   to {
-    background-position: -320px 320px;
+    background-position: -$bg_img_size $bg_img_size;
   }
 }
 
