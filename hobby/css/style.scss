@@ -240,8 +240,17 @@ iframe.ani-demo {
 }
 
 footer {
-  background: $semi-dark;
+  background: $dark;
   text-align: center;
   padding: 5px 0 30px;
   border-top: 2px dashed $accent-dark;
+}
+
+pre{
+  width: 50%;
+  border-left : dashed $accent 2px;
+  background : $semi-dark;
+  padding : 10px;
+  margin: auto;
+  border-radius : 20px;
 }

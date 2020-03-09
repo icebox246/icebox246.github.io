@@ -1,4 +1,4 @@
-let iterCount = 4;
+let iterCount = 0;
 
 let leftColor = "#42275a";
 let rightColor = "#734b6d";

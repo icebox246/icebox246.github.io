@@ -7,6 +7,14 @@
   max-width: 250px;
   max-height: 250px;
   perspective: 600px;
+  h1 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size : 4em;
+    color:#66fcf1;
+  }
 }
 
 .cube3d.base {

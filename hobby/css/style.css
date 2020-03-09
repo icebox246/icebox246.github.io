@@ -10,6 +10,16 @@
           perspective: 600px;
 }
 
+.cube3d.scene h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 4em;
+  color: #66fcf1;
+}
+
 .cube3d.base {
   width: 80%;
   height: 80%;
@@ -95,6 +105,8 @@
   -webkit-box-shadow: inset #000000 0px 0px 30px;
           box-shadow: inset #000000 0px 0px 30px;
   min-height: 50vh;
+  width: 80%;
+  margin: auto;
   background: #cecece;
 }
 
@@ -488,8 +500,17 @@ iframe.ani-demo {
 }
 
 footer {
-  background: #1f2833;
+  background: #0B0C10;
   text-align: center;
   padding: 5px 0 30px;
   border-top: 2px dashed #45A29e;
+}
+
+pre {
+  width: 50%;
+  border-left: dashed #66FCF1 2px;
+  background: #1f2833;
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
 }
