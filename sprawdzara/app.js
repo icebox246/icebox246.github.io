@@ -1,7 +1,8 @@
 setTimeout(() => {
   console.log('adjustments');
   document.querySelectorAll('*:not(img)').forEach(e => {
-    e.width = "auto";
+    if (e.width != '100%')
+      e.width = "auto";
 
     if (e.style.backgroundColor == 'rgb(178, 236, 255)') {
       e.style.backgroundColor = 'rgb(153, 205, 50)';
