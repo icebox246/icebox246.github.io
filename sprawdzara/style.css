@@ -1,6 +1,6 @@
 * {
   color: #C5C6C7;
-  background: #2d3133;
+  background: #181b1b;
   padding: 0;
   margin: 0;
   font-family: 'Consolas', monospace;
@@ -45,7 +45,7 @@ p.news {
 }
 
 td.menuitem {
-  background: #2d3133;
+  background: #181b1b;
   border: none;
   border-bottom: solid 1px #45A29e;
   -webkit-transition: background 0.3s;
