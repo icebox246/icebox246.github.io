@@ -1,4 +1,4 @@
-$dark : black;
+$dark : rgb(45, 49, 51);
 $semi-dark : #1f2833;
 $bright : #C5C6C7;
 $accent : #66FCF1;
@@ -9,7 +9,8 @@ $accent-dark : #45A29e;
   background: $dark;
   padding : 0;
   margin: 0;
-  font-family: 'Ubuntu Mono', monospace;
+  // font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
 }
 body {
   width:90%;
@@ -19,14 +20,14 @@ body {
 
 p.naglowek {
   color: $accent;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   font-size: 2em;
   padding: 10px 0;
 }
 
 p.tytul {
   color: $accent-dark;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   font-size: 1.5em;
 }
 
@@ -52,7 +53,7 @@ td.menuitem {
     background-color: $semi-dark;
   }
   a {
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Consolas', monospace;
   font-size:1.2em;
     display:block;
     width: 100%;
@@ -65,11 +66,11 @@ td.menuitem {
   }
 }
 td.second a{
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   color:$bright;
 }
 a {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   width: 100%;
   height:100%;
   color:$bright;
@@ -104,7 +105,7 @@ TD#tresc  {
         }
         a{
           font-size:1.2em;
-          font-family: 'Ubuntu Mono', monospace;
+          font-family: 'Consolas', monospace;
           width: 100%;
           height:100%;
           color:$bright;
@@ -137,7 +138,7 @@ TD#tresc  {
       a{
         
         font-size: 1.1em;
-        font-family: 'Ubuntu Mono', monospace;
+        font-family: 'Consolas', monospace;
         width: 100%;
         height:100%;
         color:$bright;
@@ -146,7 +147,7 @@ TD#tresc  {
           color:$accent-dark;
           text-decoration: none;
           font-size: 1em;
-        font-family: 'Ubuntu Mono', monospace;
+          font-family: 'Consolas', monospace;
         }
         background:none;
       }
@@ -163,7 +164,7 @@ TD#tresc  {
 
 td#tresc a {
   color:$bright;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
 }
   
 

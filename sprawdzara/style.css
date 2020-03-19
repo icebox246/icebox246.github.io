@@ -1,9 +1,9 @@
 * {
   color: #C5C6C7;
-  background: black;
+  background: #2d3133;
   padding: 0;
   margin: 0;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
 }
 
 body {
@@ -14,14 +14,14 @@ body {
 
 p.naglowek {
   color: #66FCF1;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   font-size: 2em;
   padding: 10px 0;
 }
 
 p.tytul {
   color: #45A29e;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   font-size: 1.5em;
 }
 
@@ -40,7 +40,7 @@ p.news {
 }
 
 td.menuitem {
-  background: black;
+  background: #2d3133;
   border: none;
   border-bottom: solid 1px #45A29e;
   -webkit-transition: background 0.3s;
@@ -52,7 +52,7 @@ td.menuitem:hover {
 }
 
 td.menuitem a {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   font-size: 1.2em;
   display: block;
   width: 100%;
@@ -66,12 +66,12 @@ td.menuitem a:hover {
 }
 
 td.second a {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   color: #C5C6C7;
 }
 
 a {
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   width: 100%;
   height: 100%;
   color: #C5C6C7;
@@ -114,7 +114,7 @@ TD#tresc TABLE.list TH b, TD#tresc TABLE.list TD b {
 
 TD#tresc TABLE.list TH a, TD#tresc TABLE.list TD a {
   font-size: 1.2em;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   width: 100%;
   height: 100%;
   color: #C5C6C7;
@@ -155,7 +155,7 @@ TD#tresc table.scoreboard td b {
 
 TD#tresc table.scoreboard td a {
   font-size: 1.1em;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
   width: 100%;
   height: 100%;
   color: #C5C6C7;
@@ -168,7 +168,7 @@ TD#tresc table.scoreboard td a:hover {
   color: #45A29e;
   text-decoration: none;
   font-size: 1em;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
 }
 
 #submit {
@@ -179,5 +179,5 @@ TD#tresc table.scoreboard td a:hover {
 
 td#tresc a {
   color: #C5C6C7;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Consolas', monospace;
 }
