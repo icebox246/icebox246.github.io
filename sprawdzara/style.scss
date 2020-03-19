@@ -18,6 +18,11 @@ body {
   border : none;
 }
 
+p {
+  color: $bright;
+  font-family: 'Consolas', monospace;
+}
+
 p.naglowek {
   color: $accent;
   font-family: 'Consolas', monospace;

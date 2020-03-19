@@ -12,6 +12,11 @@ body {
   border: none;
 }
 
+p {
+  color: #C5C6C7;
+  font-family: 'Consolas', monospace;
+}
+
 p.naglowek {
   color: #66FCF1;
   font-family: 'Consolas', monospace;
