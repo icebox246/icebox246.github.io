@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Szymonie Ziółkowskim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="./js/medals.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" defer></script>
+  <script src="./js/charts.js" defer></script>
+</head>
+
+<body>
+
+
+
+  <div class="baner">
+    <h1>O Szymonie Ziółkowskim</h1>
+  </div>
+
+  <header>
+    <img src="./favicon.svg" alt="logo" height="80%">
+    <p>O Szymonie Ziółkowskim</p>
+    <ul>
+      <li><a href="#zyciorys">Życiorys</a></li>
+      <li><a href="#osiagniecia">Osiągnięcia</a></li>
+      <li><a href="#progress">Progresja Wyników</a></li>
+      <li><a href="#rekordy">Rekordy</a></li>
+    </ul>
+  </header>
+
+
+  <main>
+    <section id="zyciorys">
+      <h1>Życiorys</h1>
+      <div class="row">
+        <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/SzymonZiolkowski.jpg" alt="">
+        <p><b>Szymon Jerzy Ziółkowski</b> jest polskim lekkoatletą, uprawia on rzut młotem. Pochodzi z rodziny o
+          sportowych
+          tradycjach. Rzut młotem uprawiał również jego ojciec Jerzy oraz siostra Michalina. Szymon Ziółkowski został
+          zawodnikiem klubu sportowego AZS Poznań. Trenowali go Czesław Cybulski, Krzysztof Kaliszewski i następnie
+          Grzegorz Nowak.
+          Jest on absolwentem poznańskiego liceum zawodowego. Po maturze ukończył studia licencjackie z matematyki na
+          Uniwersytecie im. Adama Mickiewicza.
+          Od 1 stycznia 2010 do 31 grudnia 2013 zasiadał w radzie zawodniczej IAAF.</p>
+      </div>
+
+      <h2>W polityce</h2>
+      <div class="row">
+        <p>Był członkiem honorowego komitetu poparcia Bronisława Komorowskiego przed wyborami prezydenckimi w 2010 i w
+          2015.
+          W wyborach samorządowych w 2014 bez powodzenia kandydował do sejmiku wielkopolskiego z listy organizowanego
+          przez
+          Ryszarda Grobelnego komitetu Teraz Wielkopolska.
+          W wyborach parlamentarnych w 2015 znalazł się na pierwszym miejscu listy Platformy Obywatelskiej w okręgu
+          poznańskim. Uzyskał mandat posła VIII kadencji, otrzymując 29 760 głosów. W wyborach w 2019 nie uzyskał
+          poselskiej
+          reelekcji, zdobywając 12 657 głosów.</p>
+
+
+        <img class="pic"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Szymon_Zi%C3%B3%C5%82kowski_Sejm_2016.JPG/800px-Szymon_Zi%C3%B3%C5%82kowski_Sejm_2016.JPG"
+          alt="">
+      </div>
+    </section>
+
+
+    <section id="osiagniecia">
+      <h1>Osiągnięcia</h1>
+
+      <h2>Medale</h2>
+
+      <div class="medal-case">
+        <ul class="medal-buttons">
+          <li onclick="changeMedalList(0,this);" class="clicked">
+            <img src="/img/gold.svg" alt="">
+            <h3>Złote</h3>
+          </li>
+          <li onclick="changeMedalList(1,this);">
+            <img src="/img/silver.svg" alt="">
+            <h3>Srebrne</h3>
+          </li>
+          <li onclick="changeMedalList(2,this);">
+            <img src="/img/bronze.svg" alt="">
+            <h3>Brązowe</h3>
+          </li>
+        </ul>
+
+        <div class="medal-lists">
+          <ul id="gold-medals" class="active">
+            <li>
+              <p><b>1994</b> - Mistrzostwa świata juniorów - <b><img class="flag"
+                    src="https://www.countryflags.io/pt/flat/16.png"> Lizbona
+                </b></p>
+            </li>
+            <li>
+              <p><b>1995</b> - Mistrzostwa Europy juniorów - <b><img class="flag"
+                    src="https://www.countryflags.io/hu/flat/16.png"> Nyíregyháza
+                </b></p>
+            </li>
+            <li>
+              <p><b>1996</b> - I liga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/no/flat/16.png"> Fana
+                </b></p>
+            </li>
+            <li>
+              <p><b>1997</b> - I liga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/cz/flat/16.png"> Praga
+                </b></p>
+            </li>
+            <li>
+              <p><b>2000</b> - I liga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/pl/flat/16.png"> Bydgoszcz
+                </b></p>
+            </li>
+            <li>
+              <p><b>2000</b> - Igrzyska olimpijskie - <b><img class="flag"
+                    src="https://www.countryflags.io/au/flat/16.png"> Sydney
+                </b></p>
+            </li>
+            <li>
+              <p><b>2001</b> - Superliga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/de/flat/16.png"> Brema
+                </b></p>
+            </li>
+            <li>
+              <p><b>2001</b> - Igrzyska frankofońskie - <b><img class="flag"
+                    src="https://www.countryflags.io/ca/flat/16.png"> Ottawa
+                </b></p>
+            </li>
+            <li>
+              <p><b>2001</b> - Mistrzostwa świata - <b><img class="flag"
+                    src="https://www.countryflags.io/ca/flat/16.png"> Edmonton
+                </b></p>
+            </li>
+            <li>
+              <p><b>2004</b> - Superliga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/pl/flat/16.png"> Bydgoszcz
+                </b></p>
+            </li>
+            <li>
+              <p><b>2005</b> - Superliga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/it/flat/16.png"> Florencja
+                </b></p>
+            </li>
+            <li>
+              <p><b>2006</b> - Superliga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/es/flat/16.png"> Malaga
+                </b></p>
+            </li>
+            <li>
+              <p><b>2006</b> - DécaNation - <b><img class="flag" src="https://www.countryflags.io/fr/flat/16.png"> Paryż
+                </b></p>
+            </li>
+            <li>
+              <p><b>2007</b> - Superliga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/de/flat/16.png"> Monachium
+                </b></p>
+            </li>
+            <li>
+              <p><b>2008</b> - Superliga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/fr/flat/16.png"> Annecy</b></p>
+            </li>
+          </ul>
+
+          <ul id="silver-medals">
+            <li>
+              <p><b>1992</b> - Europejskie Igrzyska Młodzieży Szkolnej - <b><img class="flag"
+                    src="https://www.countryflags.io/fr/flat/16.png"> Caen
+                </b></p>
+            </li>
+            <li>
+              <p><b>1997</b> - Młodzieżowe mistrzostwa Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/fi/flat/16.png"> Turku
+                </b></p>
+            </li>
+            <li>
+              <p><b>1999</b> - Superliga pucharu Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/fr/flat/16.png"> Paryż
+                </b></p>
+            </li>
+            <li>
+              <p><b>2001</b> - Igrzyska Dobrej Woli - <b><img class="flag"
+                    src="https://www.countryflags.io/au/flat/16.png"> Brisbane
+                </b></p>
+            </li>
+            <li>
+              <p><b>2005</b> - Mistrzostwa świata - <b><img class="flag"
+                    src="https://www.countryflags.io/fi/flat/16.png"> Helsinki
+                </b></p>
+            </li>
+            <li>
+              <p><b>2009</b> - Superliga drużynowych mistrzostw Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/pt/flat/16.png"> Leiria
+                </b></p>
+            </li>
+            <li>
+              <p><b>2009</b> - Mistrzostwa świata - <b><img class="flag"
+                    src="https://www.countryflags.io/de/flat/16.png"> Berlin</b></p>
+            </li>
+          </ul>
+
+          <ul id="bronze-medals">
+            <li>
+              <p><b>2012</b> - Mistrzostwa Europy - <b><img class="flag"
+                    src="https://www.countryflags.io/fi/flat/16.png"> Helsinki</b></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="progress">
+      <h1>Progresja Wyników</h1>
+
+      <h2>Pozycje w rankingach</h2>
+
+      <div class="row">
+        <div class="chart-container" style="width: 35%; height: 200px;">
+          <canvas id="tnf-chart"></canvas>
+        </div>
+
+
+        <div class="chart-container" style="width: 35%; height: 200px;">
+          <canvas id="gr-chart"></canvas>
+        </div>
+
+
+      </div>
+
+      <div class="chart-container" style="width: 80%; height: 600px;">
+        <canvas id="progress-chart"></canvas>
+      </div>
+
+    </section>
+
+
+    <section id="rekordy">
+      <h1>Rekordy</h1>
+
+      <ul class="records">
+        <li>
+          <p><b>06.08.2000</b> - <img class="flag" src="https://www.countryflags.io/pl/flat/16.png"> Kraków - <b>80,39 m
+            </b></p>
+        </li>
+        <li>
+          <p><b>20.08.2000</b> - <img class="flag" src="https://www.countryflags.io/pl/flat/16.png"> Warszawa - <b>81,42
+              m
+            </b></p>
+        </li>
+        <li>
+          <p><b>16.03.2001</b> - <img class="flag" src="https://www.countryflags.io/za/flat/16.png"> Roodepoort -
+            <b>82,13 m
+            </b></p>
+        </li>
+        <li>
+          <p><b>04.06.2001</b> - <img class="flag" src="https://www.countryflags.io/de/flat/16.png"> Rehlingen -
+            <b>82,36 m
+            </b></p>
+        </li>
+        <li>
+          <p><b>15.06.2001</b> - <img class="flag" src="https://www.countryflags.io/fr/flat/16.png"> Clermont-Ferrand -
+            <b>82,47 m
+            </b></p>
+        </li>
+        <li>
+          <p><b>05.08.2001</b> - <img class="flag" src="https://www.countryflags.io/ca/flat/16.png"> Edmonton - <b>83,38
+              m</b></p>
+        </li>
+      </ul>
+
+      <h2>Rekord życiowy</h2>
+      <p class="lrecord">
+        <b>83,38 m</b> - <img class="flag" src="https://www.countryflags.io/ca/flat/32.png"> Edmonton - 5 sierpnia 2001
+      </p>
+
+      <h2>
+        Rzut podczas Olimpiady w Syndey
+      </h2>
+
+      <iframe width="840" height="472" src="https://www.youtube-nocookie.com/embed/kNtQFnzJlqw?controls=1"
+        frameborder="0" controls="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen style="margin: 50px auto; display:block"></iframe>
+
+    </section>
+
+
+
+  </main>
+
+
+  <footer>
+    <p>
+      Autor: <br>
+      Adam Rogowski <br>
+      klasa Ib* <br>
+      2020
+      <hr>
+      Na podstawie: <a href="https://pl.wikipedia.org/wiki/Szymon_Ziółkowski" style="color:white"
+        target="_blank">Wikipedia</a>
+    </p>
+  </footer>
+</body>
+
+</html>

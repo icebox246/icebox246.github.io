@@ -1,0 +1,365 @@
+*, a {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Jost', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+body {
+  background: fixed url(./background.svg);
+  background-size: 250px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  width: 60%;
+  margin: 30px 20%;
+  border-bottom: 2px #822cc9 solid;
+  padding: 10px;
+  color: #822cc9;
+  -webkit-animation: fadein 0.3s ease;
+          animation: fadein 0.3s ease;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-left: 10%;
+}
+
+header {
+  z-index: 100;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 5vh;
+  height: 5vh;
+  background: #822cc9;
+}
+
+header > img {
+  margin-left: 20px;
+}
+
+header p {
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.7em;
+}
+
+header ul {
+  margin-left: 20vw;
+  width: 50%;
+  min-height: 5vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
+
+header ul li:hover {
+  background: rgba(255, 255, 255, 0.384);
+}
+
+header ul li a {
+  padding: 100% 0;
+  display: block;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.767);
+  width: 80vw;
+  margin: 0 10vw;
+  border: 1px solid #822cc9;
+  -webkit-box-shadow: #822cc9 0 0 10px;
+          box-shadow: #822cc9 0 0 10px;
+}
+
+main section {
+  min-height: 70vh;
+}
+
+footer {
+  margin: auto;
+  color: white;
+  padding: 20px;
+  background: #822cc9;
+  text-align: center;
+}
+
+.baner {
+  background: url(https://i.iplsc.com/szymon-ziolkowski/0005NIA1ULISEO7W-C122-F4.jpg);
+  background-size: cover;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  height: 70vh;
+  -webkit-filter: saturate(1.2);
+          filter: saturate(1.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.baner h1 {
+  z-index: 120;
+  color: black;
+  border-bottom: 4px #822cc9 solid;
+  background: rgba(255, 255, 255, 0.411);
+  width: 100%;
+  padding: 30px;
+  margin: 0;
+  margin-top: 50px;
+  font-size: 3em;
+}
+
+.row {
+  margin: 50px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row p {
+  max-width: 40%;
+}
+
+img.pic {
+  -webkit-animation: fadein 0.3s ease;
+          animation: fadein 0.3s ease;
+  max-height: 50vh;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.61);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.61);
+  border-radius: 20px;
+}
+
+p b {
+  font-size: 105%;
+  color: #822cc9;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.medal-case {
+  padding: 10px;
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px #822cc9 solid;
+  border-radius: 30px;
+}
+
+.medal-buttons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #822cc9;
+  margin-bottom: 20px;
+}
+
+.medal-buttons li {
+  -webkit-transition: background  0.5s ease-out, color 0.5s ease-out;
+  transition: background  0.5s ease-out, color 0.5s ease-out;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.medal-buttons li.clicked {
+  border: 3px #822cc9 dashed;
+}
+
+.medal-buttons li:hover {
+  background: #822cc9;
+  color: white;
+}
+
+.medal-buttons li img {
+  max-width: 120px;
+}
+
+.medal-buttons li p {
+  display: inline-block;
+}
+
+.medal-lists ul {
+  list-style-type: circle;
+  max-height: 0;
+  opacity: 0;
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
+  -webkit-transition: opacity 0.6s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+  transition: opacity 0.6s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out, opacity 0.6s ease-in-out;
+  transition: clip-path 0.5s ease-in-out, opacity 0.6s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+}
+
+.medal-lists ul.active {
+  opacity: 1;
+  max-height: 100%;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  display: block;
+}
+
+.chart-container {
+  margin: 70px auto;
+}
+
+.records {
+  width: 40%;
+  list-style-type: none;
+  text-align: center;
+  margin: auto;
+}
+
+.records li {
+  margin: 5px;
+}
+
+.lrecord {
+  font-size: 2em;
+  text-align: center;
+  margin: 40px;
+}
+
+.flag {
+  -webkit-filter: drop-shadow(1px 1px 0px black);
+          filter: drop-shadow(1px 1px 0px black);
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  img.pic {
+    max-height: 30vh;
+  }
+}
