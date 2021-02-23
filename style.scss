@@ -138,7 +138,7 @@ section {
 
 .grid {
   display: grid;
-  grid-gap: 30px;
+  grid-row-gap: 30px;
   grid-template-columns: auto auto auto;
 }
 
@@ -152,6 +152,7 @@ section {
   border-radius: 5px;
   text-align: center;
   padding: 5px;
+  margin: 0 15px;
 
   .thumb {
     background: gray;

@@ -161,7 +161,7 @@ section p {
 .grid {
   display: -ms-grid;
   display: grid;
-  grid-gap: 30px;
+  grid-row-gap: 30px;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
 }
@@ -176,6 +176,7 @@ section p {
   border-radius: 5px;
   text-align: center;
   padding: 5px;
+  margin: 0 15px;
 }
 
 .post .thumb {
