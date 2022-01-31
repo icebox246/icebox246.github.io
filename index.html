@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lil blog</title>
+	<script src="https://livejs.com/live.js"></script>
+	<script type="module" src="main.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h2>icebox blog</h2>
+
+	<main v-scope>
+
+		<article v-for="post in posts" v-effect="$el.id = post.slug">
+			<p>Posted on {{post.date}}</p>
+
+			<div v-if="post.content == undefined">
+				<h3> {{ post.summary }} </h3>
+				<a  href="#" v-effect="$el.href = `#${post.slug}`"
+					@click="fetchPostContent(post.slug)">
+					show more... ({{ post.slug }})
+				</a>
+			</div>
+
+			<div v-if="post.content != undefined">
+				<div v-html="post.content"></div>
+			</div>
+
+		</article>
+	</main>
+</body>
+</html>

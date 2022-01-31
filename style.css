@@ -1,0 +1,20 @@
+html {
+	background:#1E1F29;
+	scroll-behavior: smooth;
+	font-size:14pt;
+}
+
+
+*, a {
+	font-family: 'Fira Code', 'Ubuntu Mono', monospace;	
+}
+
+a, a:visited {
+	color: #AC86E2;
+}
+
+article {
+	margin: auto;
+	margin-bottom: 4em;
+	width: calc(min(20cm, 80%));
+}
