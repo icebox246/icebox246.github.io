@@ -1,9 +1,0 @@
-* {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-body {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
